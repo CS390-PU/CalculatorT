@@ -1,0 +1,95 @@
+body {
+  background-color: #dbe4f0;
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%),
+                    linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.2) 75%),
+                    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.2) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  max-width: 360px;
+  width: 100%;
+  background: #e6ebf1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.calculator-header {
+  background: #212529;
+  color: #f8f9fa;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.calculator-header h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+.expression {
+  font-size: 0.9rem;
+  color: #adb5bd;
+  text-align: right;
+  min-height: 1.2em;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+
+
+.calculator-screen {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0.5rem;
+  background: #343a40;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.btn-calc,
+.btn-op {
+  height: 60px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-calc {
+  background: linear-gradient(to bottom, #f8f9fa, #ced4da);
+  color: #212529;
+}
+
+.btn-op {
+  background: linear-gradient(to bottom, #dee2e6, #adb5bd);
+  font-weight: 600;
+  color: #000;
+}
+
+.btn-calc:hover,
+.btn-op:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-calc:active,
+.btn-op:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
